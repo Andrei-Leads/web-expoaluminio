@@ -31,7 +31,7 @@ export function ConfiguradorSeccion({ servicios, nombre, contacto, mensaje }: Pr
       medio:
         i < 6 ? (
           foto ? (
-            <Foto imagen={foto} decorativa sinEtiqueta proporcion="4/3" calidad={60} sizes="(min-width: 1024px) 200px, 45vw" className="w-full rounded-[18px] bg-primario-suave" />
+            <Foto imagen={foto} decorativa sinEtiqueta proporcion="4/3" calidad={85} sizes="(min-width: 1024px) 200px, 45vw" className="w-full rounded-[18px] bg-primario-suave" />
           ) : (
             <span aria-hidden="true" className="flex aspect-[4/3] w-full items-center justify-center rounded-[18px] bg-primario-suave font-titulo text-[44px] font-medium text-primario-tinta">
               {s.titulo.charAt(0)}

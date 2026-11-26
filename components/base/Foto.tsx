@@ -34,7 +34,7 @@ type Props = {
   claseFigura?: string;
   /** Alineación del pie. */
   pieDerecha?: boolean;
-  calidad?: 60 | 75;
+  calidad?: 85 | 90;
   children?: ReactNode;
 };
 
@@ -69,7 +69,7 @@ export function Foto({
         loading={eager && !preload ? "eager" : undefined}
         // Con «low», React no mete un segundo `<link rel="preload">` para la foto eager.
         fetchPriority={eager && !preload ? "low" : undefined}
-        quality={calidad}
+        quality={calidad ?? 90}
         className="object-cover"
       />
       {children}

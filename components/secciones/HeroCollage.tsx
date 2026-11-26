@@ -69,7 +69,7 @@ export function HeroCollage({ negocio, contacto, valoracion, fotoA, fotoB, mensa
                     sinEtiqueta
                     eager
                     proporcion="1/1"
-                    calidad={60}
+                    calidad={85}
                     sizes="(min-width: 1024px) 30vw, 46vw"
                     className="!absolute bottom-0 left-[54%] w-[46%] rounded-guijarro-2 border-[6px] border-fondo shadow-suave lg:left-1/2 lg:w-[44%]"
                   />
