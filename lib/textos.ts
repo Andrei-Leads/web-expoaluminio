@@ -1,4 +1,5 @@
-import { etiquetaOrigen, mediaVisible, type Imagen, type SiteConfig, type Trabajo } from "@andrei-leads/core";
+import { mediaVisible, type Imagen, type SiteConfig, type Trabajo } from "@andrei-leads/core";
+import { etiquetaIA } from "@/lib/etiqueta";
 
 /** Sello de cifra: la cifra en display y una línea de texto debajo. */
 export type Sello = { cifra: string; linea: string };
@@ -45,7 +46,7 @@ export function metaTrabajo(t: Pick<Trabajo, "ubicacion" | "anio" | "superficie"
  * «Imágenes generadas con IA» si alguna lo es; las de la ficha de Google, aparte.
  */
 export function pieConjunto(imagenes: readonly Pick<Imagen, "origen">[]): string | undefined {
-  const etiquetas = [...new Set(imagenes.map((i) => etiquetaOrigen(i)).filter((e): e is string => !!e))];
+  const etiquetas = [...new Set(imagenes.map((i) => etiquetaIA(i)).filter((e): e is string => !!e))];
   if (etiquetas.length === 0) return undefined;
   const ia = imagenes.filter((i) => i.origen === "ia").length;
   return etiquetas.map((e) => (e === "Imagen generada con IA" && ia > 1 ? "Imágenes generadas con IA" : e)).join(" · ");

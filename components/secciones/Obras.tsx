@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { etiquetaOrigen, type SiteConfig, type Trabajo } from "@andrei-leads/core";
+import { etiquetaIA } from "@/lib/etiqueta";
+import { type SiteConfig, type Trabajo } from "@andrei-leads/core";
 
 import { Foto } from "@/components/base/Foto";
 import { metaTrabajo, pieConjunto } from "@/lib/textos";
@@ -64,7 +65,7 @@ export function Obras({ trabajos, galeria = [], modo, antetitulo, titulo }: Prop
           {lista.map((t, i) => {
             const grande = modo === "inicio" && i === 0 && lista.length > 1;
             const foto = t.imagenes[0];
-            const etiqueta = etiquetaOrigen(foto);
+            const etiqueta = etiquetaIA(foto);
             const meta = metaTrabajo(t, modo !== "inicio");
             return (
               <li key={t.slug} data-aparecer className={cn(grande && "lg:row-span-2")}>

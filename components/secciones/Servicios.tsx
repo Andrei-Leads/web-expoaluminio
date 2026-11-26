@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { etiquetaOrigen, precioDesde, type Servicio } from "@andrei-leads/core";
+import { etiquetaIA } from "@/lib/etiqueta";
+import { precioDesde, type Servicio } from "@andrei-leads/core";
 
 import { Foto } from "@/components/base/Foto";
 
@@ -35,7 +36,7 @@ export function Servicios({ servicios, conCabecera }: Props) {
       <ul className="grid grid-cols-[repeat(auto-fill,minmax(150px,1fr))] gap-x-[clamp(14px,2vw,24px)] gap-y-[clamp(28px,3vw,40px)] lg:grid-cols-[repeat(auto-fill,minmax(240px,1fr))]">
         {servicios.map((s) => {
           const foto = s.imagenes[0];
-          const etiqueta = foto && etiquetaOrigen(foto);
+          const etiqueta = foto && etiquetaIA(foto);
           const precio = s.precioDesde && precioDesde(s.precioDesde);
           return (
             <li key={s.slug}>

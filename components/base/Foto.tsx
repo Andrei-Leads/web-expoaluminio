@@ -1,6 +1,7 @@
 import Image from "next/image";
+import { etiquetaIA } from "@/lib/etiqueta";
 import type { ReactNode } from "react";
-import { etiquetaOrigen, type Imagen } from "@andrei-leads/core";
+import { type Imagen } from "@andrei-leads/core";
 
 import { cn } from "@/lib/utils";
 
@@ -57,7 +58,7 @@ export function Foto({
   calidad,
   children,
 }: Props) {
-  const etiqueta = sinEtiqueta ? undefined : etiquetaOrigen(imagen);
+  const etiqueta = sinEtiqueta ? undefined : etiquetaIA(imagen);
   const caja = (
     <div className={cn("relative overflow-hidden rounded-foto bg-alterna", PROPORCION[proporcion], className)}>
       <Image
