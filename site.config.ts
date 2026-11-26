@@ -5,7 +5,7 @@ import { defineSiteConfig } from "@andrei-leads/core";
 
 export default defineSiteConfig({
   negocio: {
-    nombre: "Expoaluminio A.G.",
+    nombre: "Expoaluminio",
     nombreLegal: "Carpintería Metálica Expoaluminio",
     nif: "B00000000", // PROVISIONAL: no aparece en registros
     sector: "Carpintería metálica y de aluminio",
