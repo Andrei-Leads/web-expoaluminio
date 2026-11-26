@@ -2,6 +2,7 @@
 
 > **Estado de esta web (26/11/2026):** demo para Carpintería Metálica Expoaluminio A.G. con sus datos y con 16 fotos de su ficha de Google (`public/fotos/`, `origen: "ficha-google"`).
 > **Antes de publicar con `seo.indexar: true`:** confirmar con el cliente el permiso para usar esas fotos, su razón social y su NIF (hoy provisionales: `B00000000`) y si quiere el fijo 933 33 45 96 en «Llamar» en vez del móvil.
+> **Sin etiquetas de origen** (decisión de Ysst, 26/11/2026): las 2 fotos de IA (Mosquiteras y Reparaciones) no llevan «Imagen generada con IA». En una web real, sustitúyelas por fotos del cliente.
 
 Template de carpintería metálica (tipo proyecto) para un taller familiar de cerrajería metálica y persianas. Es un álbum del taller: collage orgánico de la nave y de una obra en el hero, «El taller» (años, equipo e historia) como sección estrella y un configurador de tres toques que deja el WhatsApp escrito.
 
