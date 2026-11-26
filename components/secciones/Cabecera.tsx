@@ -32,7 +32,7 @@ export function Cabecera({ nombre, logo, telefono, whatsapp, mensaje, enlaces }:
         <span
           className={cn(
             "font-titulo font-semibold tracking-[-0.005em] [overflow-wrap:anywhere] lg:max-w-[260px] lg:text-xl",
-            muyLargo ? "text-[13px]" : largo ? "text-[15px]" : "text-xl",
+            muyLargo ? "text-[13px]" : largo ? "text-[15px]" : logo ? "text-[17px] min-[400px]:text-xl" : "text-xl",
             "leading-[1.1] lg:leading-[1.1]",
           )}
         >
