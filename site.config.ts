@@ -60,7 +60,7 @@ export default defineSiteConfig({
       descripcion: "Mosquiteras a medida para ventanas y puertas: enrollables, correderas o fijas.",
       contenido: ["Tomamos medidas y te hacemos la mosquitera que mejor encaja con tu ventana o tu puerta."],
       incluye: ["Medición", "Fabricación a medida", "Montaje"],
-      imagenes: [],
+      imagenes: [{ src: "/ejemplo/servicio-aluminio.jpg", alt: "Ventana de aluminio corredera sobre el banco del taller", origen: "ia" }],
       preguntas: [],
     },
     {
@@ -92,7 +92,7 @@ export default defineSiteConfig({
       descripcion: "Persianas atascadas, cristales rotos, cerraduras y ventanas que no cierran en el barrio.",
       contenido: ["Atendemos reparaciones de carpintería de aluminio en L'Hospitalet. Llámanos y te decimos cuándo podemos pasar."],
       incluye: ["Visita", "Presupuesto antes de tocar nada", "Reparación"],
-      imagenes: [],
+      imagenes: [{ src: "/ejemplo/taller-manos.jpg", alt: "Manos ajustando una lama de persiana en el banco de trabajo", origen: "ia" }],
       preguntas: [],
     },
   ],
